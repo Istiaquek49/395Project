@@ -59,7 +59,8 @@ const HomePageView = () => {
         </Toolbar>
       </AppBar>
       
-      <div className={classes.greeting}><h1>Home Page</h1></div>
+      <div className="HomeTitle" style={{marginLeft: '22px'}}>
+        <h1 style={{fontFamily: 'Courier, sans-serif'}}>Welcome to the Campus and Student Directory App</h1>
     </div>
   );    
 }

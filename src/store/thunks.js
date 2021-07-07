@@ -77,3 +77,13 @@ export const fetchStudentThunk = id => async dispatch => {
     console.error(err);
   }
 };
+
+//Add campus thunk
+export const addCampusThunk = (campus) => async (dispatch) => {
+  try {
+    let res = await axios.post(`/api/campuses`, campus);
+    dispatch(ac.addCampus(res.data));
+  } catch(err) {
+    console.error(err);
+  }
+};

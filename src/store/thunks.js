@@ -97,3 +97,13 @@ export const deleteCampusThunk = (campusId) => async (dispatch) => {
     console.log(err);
   }
 };
+
+//Edit campus information thunk
+export const editCampusThunk = campus => async dispatch => {
+  try {
+    let updatedCampus = await axios.put(`/api/campuses/${campus}`, campus);
+    dispatch(ac.editCampus(updatedCampus));
+  } catch(err) {
+    console.error(err);
+  }
+};

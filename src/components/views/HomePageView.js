@@ -37,35 +37,30 @@ const useStyles = makeStyles(theme => ({
 
 const HomePageView = () => {
   const classes = useStyles();
-  return (
-    <div className={classes.root}>
-      <AppBar position="static" elevation={0} className={classes.appBar}>
-        <Toolbar>
-          <Typography variant="h6" className={classes.title} color="inherit" >
-            CRUD App
-          </Typography>
-
-          <Link className={classes.links} to={'/campuses'} >
-            <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
-              All Campuses
-            </Button>
-          </Link>
-
-          <Link className={classes.links} to={'/students'} >
-            <Button variant="contained" color="primary">
-              All Students
-            </Button>
-          </Link>
-        </Toolbar>
-      </AppBar>
-      
-      <div className="HomeTitle" style={{marginLeft: '22px'}}>
-        <h1 style={{fontFamily: 'Courier, sans-serif'}}>Welcome to the Campus and Student Directory App</h1>
-    </div>
+  <div className={classes.root}>
+  <AppBar position="static" elevation={0} className={classes.appBar}>
+    <Toolbar>
+      <Typography variant="h6" className={classes.title} color="inherit" >
+        CRUD App
+        </Typography>
+      <Link className={classes.links} to={'/campuses'} >
+        <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
+          All Campuses
+        </Button>
+      </Link>
+      <Link className={classes.links} to={'/students'} >
+        <Button variant="contained" color="secondary">
+          All Students
+        </Button>
+      </Link>
+    </Toolbar>
+  </AppBar>
+  <div className="Homepage" style={{marginLeft: '20px'}}>
+    <h1 style={{fontFamily: 'Courier, sans-serif'}}>Campus and Student Directory App</h1>
+    <p>Options available are <b>All Campuses</b> or <b>All Students</b> </p>
+  </div>
+</div>
   );    
 }
-
-
-
 
 export default HomePageView;

@@ -1,8 +1,59 @@
 .App {
-  background-color: #fcb6bb;
+  background-color: #ff4063;
   min-height: 100vh;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #000000;
+}
+.addButton {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+.Body {
+  margin-left: 20px;
+}
+
+.Title {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  min-width: 200px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 20px;
+}
+
+.List {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.Item {
+  min-width: 20%!important;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.Name {
+  text-decoration: none!important;
+  color: black!important;
+}
+
+.deleteButton {
+  width: 23px!important;
+  min-width: 23px!important;
+}
+
+.csPage {
+  display: flex;
 }

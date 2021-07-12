@@ -39,22 +39,22 @@ const NewStudentView = (props) => {
     <div className={classes.root}>
       <div className={classes.formContainer}>
         <div className={classes.formTitle}>
-          <Typography style={{fontWeight: 'bold', fontFamily: 'Courier, sans-serif', fontSize: '20px', color: '#11153e'}}>
+          <Typography style={{fontWeight: 'bold', fontFamily: 'OCR A Std, monospace', fontSize: '30px', color: '#000000'}}>
             New Student
           </Typography>
         </div>
         <form style={{textAlign: 'center'}} onSubmit={(e) => handleSubmit(e)}>
-          <label style= {{color:'#11153e', fontWeight: 'bold'}}>First Name: </label>
+          <label style= {{color:'#000000', fontWeight: 'bold'}}>First Name: </label>
           <input type="text" name="firstname" onChange ={(e) => handleChange(e)} />
           <br/>
           <br/>
 
-          <label style={{color:'#11153e', fontWeight: 'bold'}}>Last Name: </label>
+          <label style={{color:'#000000', fontWeight: 'bold'}}>Last Name: </label>
           <input type="text" name="lastname" onChange={(e) => handleChange(e)} />
           <br/>
           <br/>
 
-          <label style={{color:'#11153e', fontWeight: 'bold'}}>campusId: </label>
+          <label style={{color:'#000000', fontWeight: 'bold'}}>campusId: </label>
           <input type="text" name="campusId" onChange={(e) => handleChange(e)} />
           <br/>
           <br/>

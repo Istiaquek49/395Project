@@ -139,17 +139,17 @@ const AllStudentsView = (props) => {
               </Toolbar>
             </AppBar>
           </div>
-          <div className="csHeader">
-            <h1 style={{ marginLeft: '20px', fontFamily: 'Courier, sans-serif' }}>All Students</h1>
+          <div className="Header">
+            <h1 style={{ marginLeft: '20px', fontFamily: 'OCR A Std, monospace' }}>All Students</h1>
             <Button variant="contained" color="primary" onClick={this.startSAdd}>
               Add Student
             </Button>
           </div>
-          <div className="csList">
+          <div className="List">
             {this.props.allStudents.map((student) => (
-              <div className="studentList csItem" key={student.id}>
-                <div className="csTitle">
-                  <Link className="csName" to={`/student/${student.id}`}>
+              <div className="studentList Item" key={student.id}>
+                <div className="Title">
+                  <Link className="Name" to={`/student/${student.id}`}>
                     <h2>{student.firstname} {student.lastname}</h2>
                   </Link>
                   <Button className="deleteButton" variant="contained" style={{ height: '25px', marginLeft: '10px' }} onClick={() => onDelete(student.id)}>

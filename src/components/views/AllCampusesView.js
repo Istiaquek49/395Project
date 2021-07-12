@@ -130,7 +130,7 @@ const AllCampusesView = (props) => {
             </AppBar>
           </div>
           <div className="Header">
-            <h1 style={{ marginLeft: '20px', fontFamily: 'Courier, sans-serif' }}>All Campuses</h1>
+            <h1 style={{ marginLeft: '20px', fontFamily: 'OCR A Std, monospace' }}>All Campuses</h1>
             <Button className="addButton" variant="contained" color="primary" onClick={this.startAdd}>
               Add Campus
             </Button>
